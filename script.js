@@ -1,39 +1,27 @@
-//strings :- A series of characters is called strings
-console.log('Hello World!!');
+let radius = 10;
+let pi = 3.14;
 
-let str = 'I am Arpit';
-console.log(str);
+// math operators: +, -, *, /, **, %
 
-// string concatenation
-let firstName = 'Arpit';
-let lastName = 'Mallick';
-fullName = (firstName + ' ' + lastName);
-console.log(fullName);
+// let result = pi * radius**2;
+// console.log(result);
 
-// extracting characters out of a string:- Here also the index starts from 0
-console.log(fullName[2]);
+// order of operation: B(Brackets) I(Indices like **) D(Division) M(Multiplication) A(Addition) S(Substraction)
+// let result = 10 * (5-3)**2;
+// console.log(result);
 
-// string length property
-console.log(fullName.length);
+let a = 100;
+// a += 1;
+// a++;
+// a--;
+// a /= 2;
+// a *= 2;
+// console.log(a);
 
-// string methods:- There are some methods that alter the original variable but there are some who doesn't alter the variables
-nameUpper = fullName.toUpperCase();
-console.log(nameUpper);
+// NaN = Not a number
+console.log(10/"hello");
+console.log(10*'hi');
 
-nameLower = fullName.toLowerCase();
-console.log(nameLower);
-
-console.log(nameUpper, fullName);
-
-// Check the index of a character
-console.log(fullName.indexOf('l'));
-console.log(fullName.lastIndexOf('l')); // Gives the last index of the same repeating characters
-
-// Other string methods
-console.log(fullName.slice(0,7)); // Get the string starting from index 0 to 7-1 index.
-
-console.log(fullName.substr(2,8)); // Get the string starting from index 2 and the 8 characters after index 2
-
-console.log(fullName.replace('A','a'));
-
-console.log(fullName.replace('l','m')); // If there are repeating characters, then replace method will only replace the character which is at first
+// We can concatenate a number with strings like below
+let result = "Kohli scored " + a + " runs this tournament.";
+console.log(result);
