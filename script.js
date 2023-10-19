@@ -1,27 +1,20 @@
-let radius = 10;
-let pi = 3.14;
+// template strings
+let book = "Oliver Twist";
+let author = "Charles Dickens";
+likes = 100;
 
-// math operators: +, -, *, /, **, %
+// concatenate way
+// let r = "The book named " + book + " by the author " + author + " has " + likes + " likes.";
+// console.log(r);
 
-// let result = pi * radius**2;
-// console.log(result);
+// template strings way:- Easy way to concatenate
+// let res = `The book named ${book} written by the author ${author} has ${likes} likes.`;
+// console.log(res);
 
-// order of operation: B(Brackets) I(Indices like **) D(Division) M(Multiplication) A(Addition) S(Substraction)
-// let result = 10 * (5-3)**2;
-// console.log(result);
-
-let a = 100;
-// a += 1;
-// a++;
-// a--;
-// a /= 2;
-// a *= 2;
-// console.log(a);
-
-// NaN = Not a number
-console.log(10/"hello");
-console.log(10*'hi');
-
-// We can concatenate a number with strings like below
-let result = "Kohli scored " + a + " runs this tournament.";
-console.log(result);
+// creating html template using template strings
+let html = `
+    <h2>${book}</h2>
+    <p>${author}</p>
+    <span>This book has ${likes} likes</span>
+`;
+console.log(html);
