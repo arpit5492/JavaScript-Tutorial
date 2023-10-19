@@ -1,36 +1,20 @@
-console.log(true, false, 'true', 'false');
+let score = '100';
 
-// methods that return boolean values
-let email = 'arpitmallick99@gmail.com';
-// console.log(email.includes('g'));
+// score = Number(score);
+// console.log(typeof(score), score+1);
 
-let arr1 = ['Rahul', 'Raj', 20, 40];
-// console.log(arr1.includes('Raj'));
+let naam = 'Arpit';
+console.log(Number(naam));
+let sc = 30;
+console.log(String(sc));
+let result = Boolean(0); // Only the boolean of 0 is false otherwise it's always true
+console.log(typeof(result), result);
 
-// comparison operators
-let age = 45;
+let res = Boolean('0');
+console.log(res);
 
-// console.log(age == 45);
-// console.log(age != 45);
-// console.log(age > 30);
-// console.log(age < 20);
-// console.log(age >= 45);
-// console.log(age <= 55);
-
-// let nm = 'john';
-// console.log(nm == 'john');
-// console.log(nm < 'shahid');
-// console.log(nm > 'John'); // LowerCase letter 'j' is greater than the upperCase letter 'J' i.e why false
-
-// loose comparison (Different types can still be equal)
-
-age = 25;
-console.log(age == 25);
-console.log(age == '25'); // The dataTypes doesn't matter here
-
-// strict comparison (Different types can't be equal)
-console.log(age === 25);
-console.log(age === '25'); // The dataTypes does matter here
+res = Boolean(14);
+console.log(res);
 
 
 
