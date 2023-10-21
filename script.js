@@ -1,18 +1,7 @@
-// function declaration
-function greet(){
-    console.log("Nice day!!");
+// arguments and parameters
+const niceDay = function(name = 'Mario', time = 'afternoon'){
+    console.log(`Good ${time} ${name}`);
 }
 
-// function call
-// greet();
-// greet();
-// greet();
-
-// function expression:- It's called an expression because the function is assigned to a variable
-const niceDay = function(){
-    console.log("Beautiful day!!");
-};
-
-niceDay();
-niceDay();
-niceDay();
+niceDay(); //If paramenters are not declared here, then it will take the default arguments from the above function
+niceDay('Arpit','morning');
