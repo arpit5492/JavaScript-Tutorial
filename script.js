@@ -1,17 +1,13 @@
-// Logical Operators: OR ||, and &&, ! NOT 
+// break and continue statement
 
-const password = "p@ss1";
-if(password.length >= 12 && password.includes('@')){
-    console.log("The password is strong enough!!");
-}
-else if(password.length >= 8 || password.length >= 5 && password.includes('@')){
-    console.log("The password is long enough!!");
-}
-else{
-    console.log("The password is not that strong!! Please write a new password");
-}
-
-let user = false;
-if(!user){
-    console.log("The user is logged into the web page");
+const scores = [25, 30, 0, 86, 100, 20, 5];
+for(let i = 0; i < scores.length; i++){
+    if(scores[i] === 0){
+        continue;
+    }
+    console.log("Your score is: ", scores[i]);
+    if(scores[i] === 100){
+        console.log("Congratulations!! You have reached the top score");
+        break;
+    }
 }
