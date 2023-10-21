@@ -1,4 +1,4 @@
-// Logical Operators: OR ||, and &&
+// Logical Operators: OR ||, and &&, ! NOT 
 
 const password = "p@ss1";
 if(password.length >= 12 && password.includes('@')){
@@ -9,4 +9,9 @@ else if(password.length >= 8 || password.length >= 5 && password.includes('@')){
 }
 else{
     console.log("The password is not that strong!! Please write a new password");
+}
+
+let user = false;
+if(!user){
+    console.log("The user is logged into the web page");
 }
