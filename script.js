@@ -1,22 +1,13 @@
-// Switch statement follows strich equality(===)
+// Local scope:- Variables can be accessed only inside the code block where it has been declared
+// Global scope:- Variables can be accessed throughout the code
 
-const grade = 'A'
-switch(grade){
-    case 'A':
-        console.log("You have got a A grade");
-        break;
-    case 'B':
-        console.log("You have got a B grade");
-        break;
-    case 'C':
-        console.log("You have got a C grade");
-        break;
-    case 'D':
-        console.log("You have got a D grade");
-        break;
-    case 'F':
-        console.log("You have got a F grade");
-        break;
-    default:
-        console.log("Invalid grade");
+let age = 30;
+if(1){
+    let age = 40; // Both will give 40, because new value has been assigned to age variable
+    console.log("Inside the 1st code block", age);
+    if(1){
+        let age = 45;
+        console.log("Inside the 2nd code block", age); // It will take the most recent variable value i.e 40
+    }
 }
+console.log("Outside the code block", age);
