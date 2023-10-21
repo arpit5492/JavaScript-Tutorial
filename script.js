@@ -1,12 +1,12 @@
-// const names = ['Arpit', 'Sahil', 'Priyanshu', 'Anirudh'];
-// let i = 0;
-// while(i<names.length){
-//     console.log(names[i]);
-//     i++;
-// }
+// Only one of the statements will run below
 
-let i = 4;
-do{
-    console.log(i);
-    i++;
-}while(i<5);
+const password = "p@ssword-678923";
+if(password.length >= 12){
+    console.log("The password is too strong!!");
+}
+else if(password.length >= 8){
+    console.log("The password is long enough!!");
+}
+else{
+    console.log("The password is too short!! Please write a new password");
+}
