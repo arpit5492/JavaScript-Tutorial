@@ -1,12 +1,12 @@
-// Only one of the statements will run below
+// Logical Operators: OR ||, And &&
 
-const password = "p@ssword-678923";
-if(password.length >= 12){
-    console.log("The password is too strong!!");
+const password = "p@ss1";
+if(password.length >= 12 && password.includes('@')){
+    console.log("The password is strong enough!!");
 }
-else if(password.length >= 8){
+else if(password.length >= 8 || password.length >= 5 && password.includes('@')){
     console.log("The password is long enough!!");
 }
 else{
-    console.log("The password is too short!! Please write a new password");
+    console.log("The password is not that strong!! Please write a new password");
 }
