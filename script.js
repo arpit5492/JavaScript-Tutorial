@@ -1,17 +1,17 @@
-let user = {
-    name: 'Rahul',
-    age: 30,
-    email: 'rahul9876@gmail.com',
-    blogs: [
-        { title: 'The title of the movie is Life of Pi', likes: 30},
-        { title: 'The title of the movie is American Pie', likes: 50}
-    ],
-    logBlogs(){
-        console.log("The blogger has written the following blogs:");
-        this.blogs.forEach(blog => {
-            console.log(blog.title, blog.likes);
-        });
-    }
-}
+// math object
 
-user.logBlogs();
+console.log(Math.PI);
+console.log(Math.E);
+console.log(Math);
+
+const a = 8.9;
+console.log(Math.round(a));
+console.log(Math.floor(a));
+console.log(Math.trunc(a));
+console.log(Math.ceil(a));
+
+const rand = Math.random(); // random() always generates values between 0 and 1
+console.log(rand);
+
+// Random numbers between 1 and 100
+console.log(Math.round(rand * 100));
