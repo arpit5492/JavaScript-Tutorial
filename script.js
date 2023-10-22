@@ -1,19 +1,12 @@
-// callbacks & foreach
-// const myFunc = callBackFunc => {
-//     let value = 50;
-//     callBackFunc(value);
-// };
+const ul = document.querySelector(".people");
 
-// myFunc(value => { // Passing function as a parameter
-//     console.log(value);
-// });
+const people = ['Rahul', 'Rajiv', 'Rishabh', 'Joseph', 'Daniel'];
 
-// callback functions are functions that are passed to another function or method as an argument
-
-let people = ['Rahul', 'Rajiv', 'Rishabh', 'Ryan', 'Joseph'];
-
-const logPerson = (person, index) => {
-    console.log(`${index} - Hello ${person}`);
+let html = ``;
+const person = (person) => {
+    html+= `<li style = "color: blue">${person}</li>`;
 };
 
-people.forEach(logPerson); // forEach() method
+people.forEach(person);
+
+ul.innerHTML = html;
