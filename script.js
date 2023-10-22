@@ -1,12 +1,21 @@
-const ul = document.querySelector(".people");
+// object literals:- Objects has properties and values in key value pairs
 
-const people = ['Rahul', 'Rajiv', 'Rishabh', 'Joseph', 'Daniel'];
-
-let html = ``;
-const person = person => {
-    html+= `<li style = "color: purple">${person}</li>`;
+let user = {
+    name: 'Arjun',
+    age: 30,
+    email: 'arjun1967@gmail.com',
+    location: 'Italy',
+    blogs: ['Why mac & cheese rules', '10 things to be on the top of everyone']
 };
 
-people.forEach(person);
+console.log(user);
+console.log(user.name);
 
-ul.innerHTML = html;
+console.log(user['email']);
+
+user.name = 'Rahul';
+console.log(user.name);
+
+user['age'] = 45;
+
+console.log(user.age);
