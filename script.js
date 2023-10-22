@@ -1,17 +1,18 @@
-// math object
+// primitive values
+let scoreOne = 50;
+let scoreTwo = scoreOne;
 
-console.log(Math.PI);
-console.log(Math.E);
-console.log(Math);
+console.log(scoreOne, scoreTwo);
 
-const a = 8.9;
-console.log(Math.round(a));
-console.log(Math.floor(a));
-console.log(Math.trunc(a));
-console.log(Math.ceil(a));
+scoreOne = 100;
+console.log(scoreOne, scoreTwo);
 
-const rand = Math.random(); // random() always generates values between 0 and 1
-console.log(rand);
+// reference values
 
-// Random numbers between 1 and 100
-console.log(Math.round(rand * 100));
+let names = {name: 'Ryan', age: 30};
+let names1 = names;
+
+console.log(names, names1);
+
+names.name = 'Rahul';
+console.log(names, names1);
