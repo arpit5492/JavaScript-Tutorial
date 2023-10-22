@@ -19,3 +19,5 @@ console.log(user.name);
 user['age'] = 45;
 
 console.log(user.age);
+
+console.log(typeof(user));
