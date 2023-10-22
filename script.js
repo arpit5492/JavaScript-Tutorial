@@ -1,7 +1,7 @@
-// arguments and parameters
-const niceDay = function(name = 'Mario', time = 'afternoon'){
-    console.log(`Good ${time} ${name}`);
-}
+// returning values
+const calArea = function(radius){
+    return 3.14 * radius**2;
+};
 
-niceDay(); //If paramenters are not declared here, then it will take the default arguments from the above function
-niceDay('Arpit','morning');
+const area = calArea(5);
+console.log("Area is: ", area);
