@@ -1,22 +1,19 @@
-// arrow function
-// const calcArea = (radius) => {
-//     return 3.14 * radius**2;
+// callbacks & foreach
+// const myFunc = callBackFunc => {
+//     let value = 50;
+//     callBackFunc(value);
 // };
 
-// More shorter way to write an arrow function
-const calcArea = radius => 3.14 * radius**2;
-const area = calcArea(5);
-console.log("Area is: ", area);
+// myFunc(value => { // Passing function as a parameter
+//     console.log(value);
+// });
 
-const greet = () => 'Hello World!!';
-console.log(greet());
+// callback functions are functions that are passed to another function or method as an argument
 
-const bill = (products, tax) => {
-    let total = 0;
-    for(let i = 0; i<products.length;i++){
-        total+=products[i]+products[i]*tax;
-    }
-    return total;
-}
+let people = ['Rahul', 'Rajiv', 'Rishabh', 'Ryan', 'Joseph'];
 
-console.log(bill([23,45,21,67,32], 0.2));
+const logPerson = (person, index) => {
+    console.log(`${index} - Hello ${person}`);
+};
+
+people.forEach(logPerson); // forEach() method
